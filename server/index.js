@@ -27,15 +27,15 @@ if (!isDev && cluster.isMaster) {
 } else {
   const app = express();
 
-  app.use(express.json())
+  //app.use(express.json())
 
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
 
   //ROUTES
-  app.use('/api/photos', require('./api/photos'))
-  app.use('/api/users', require('./api/users'))
-  app.use('/api/users/register', require('./api/users'))
+  //app.use('/api/photos', require('./api/photos'))
+  //app.use('/api/users', require('./api/users'))
+  //app.use('/api/users/register', require('./api/users'))
   
   //SET UP MONGODB
   const mongoURI = config.get('mongoURI')
