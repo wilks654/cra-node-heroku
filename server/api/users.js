@@ -10,7 +10,6 @@ const User = require('../models/User')
 //@access public
 //@desc register new user
 router.post('/register', (req, res) => {
-    console.log('WE GET HERE')
     const { name, email, password } = req.body
 
     if (!name || !email || !password) {
