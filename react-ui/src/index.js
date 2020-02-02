@@ -43,7 +43,9 @@ let persistor = persistStore(store)
 ReactDOM.render(
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <div>Welcome to my app without routes :D</div>   
+        <BrowserRouter>
+          <Route component={App} />
+        </BrowserRouter> 
       </PersistGate>
     </ Provider>,
     document.getElementById('root')
@@ -51,7 +53,5 @@ ReactDOM.render(
 
   /** 
    * 
-   * <BrowserRouter>
-          <Route component={App} />
-        </BrowserRouter>
+   * 
   */
