@@ -1,0 +1,6 @@
+{
+
+    "mongoURI" : "mongodb+srv://sam:8R3pj!!DaJxZrEW@cluster0-en5yd.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret" : "sd23rfsdf"
+
+}
