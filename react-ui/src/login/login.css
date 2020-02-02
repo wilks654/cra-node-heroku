@@ -2,10 +2,6 @@
     margin-top: 2em;
     position: relative;
     display: grid;
-    /*
-    justify-content: center;
-    text-align: center;
-    */
     grid-gap : 2em;
 
 }
@@ -121,7 +117,23 @@
     align-items: center;
     justify-content: center;
    
-    
+}
+
+#canvas {
+    border-style: solid;
+    border-color: var(--primary);
+    background-color: var(--secondary);
+    border-radius: var(--border-radius);
+    height: 10em;
+    width: 17.5em;
+}
+
+#add-image-outer-container input {
+    display: none;
+}
+
+.add-image:hover {
+    cursor: pointer;
 }
 
 .add-image div {

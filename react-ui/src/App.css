@@ -15,10 +15,13 @@ html, body {
 }
 
 body {
-  background-image: url('./assets/Background.png');
-  background-position: 'center';
-  background-size: 'cover';
-  background-repeat: 'no-repeat';
+  background-image: url('./assets/Background.png') ;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #absolute-top-right {

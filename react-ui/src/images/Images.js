@@ -24,7 +24,7 @@ class Images extends Component {
 
            reader.onloadend = function (e) {
              var image = new Image();
-             image.src = e.target.result;
+             image.src = e.target.result
              image.onload = function(ev) {
                
                //document.getElementById("images").appendChild(image)
@@ -32,10 +32,9 @@ class Images extends Component {
                image.width = canvas.width
                image.height = canvas.height
                let ctx = canvas.getContext('2d')
-               
 
                //clear previous image
-               ctx.clearRect(0, 0, canvas.width, canvas.height);
+               ctx.clearRect(0, 0, canvas.width, canvas.height)
                //image, offset, offset, dimension, dimension
                ctx.drawImage(image, 0, 0, image.width, image.height)
                
@@ -52,7 +51,7 @@ class Images extends Component {
 
     render() {
         return <div id ='images-container'>
-            <canvas id = 'canvas' ref="canvas" width={280} height={280} />
+            <canvas id = 'canvas' ref = "canvas" />
             <input type = 'file' onChange = {(e) => this.handleFileUpload(e)}  accept="image/x-png,image/gif,image/jpeg" />
         </div>
     }
