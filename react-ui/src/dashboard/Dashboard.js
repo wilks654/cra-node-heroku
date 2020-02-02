@@ -27,8 +27,8 @@ class Dashboard extends Component {
 
         let {dispatch} = this.props
 
+        // await dispatch(getWeather()),
         await Promise.all([
-            await dispatch(getWeather()),
             await dispatch(getNews()),
             await dispatch(getClothes())
         ])
