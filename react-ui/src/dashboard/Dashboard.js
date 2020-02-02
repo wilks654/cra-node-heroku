@@ -33,10 +33,6 @@ class Dashboard extends Component {
             await dispatch(getClothes())
         ])
         
-
-        
-        
-
         this.setState({loadingData : false})
     }
 
@@ -161,7 +157,6 @@ class Dashboard extends Component {
                 <div className = 'flex-row'>
                     <ThumbnailContainer 
                         header = 'weather'
-                        body = {this.weatherBody()}
                         linkTo = {() => console.log('news')}
                     />
                     
