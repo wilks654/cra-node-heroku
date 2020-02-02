@@ -32,7 +32,7 @@
     position: relative;
     
 }
-
+/*
 img {
     background-image: url('../assets/Clouds_icon.png');
     width: 15em;
@@ -41,6 +41,7 @@ img {
     background-size: 'cover';
     background-repeat: 'no-repeat';
 }
+*/
 
 .cloud {
     position: absolute;

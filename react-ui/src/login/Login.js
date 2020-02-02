@@ -1,11 +1,13 @@
 import React, {Component} from 'react'
 import {connect} from "react-redux"
-import {getPhotos} from '../actions/photos'
+
 
 import {withRouter} from "react-router-dom"
 import {authenticateUser} from "../actions/login"
 import {linkTo} from "../helper-functions"
 import './login.css'
+
+import loginButton from '../assets/Login_button.png'
 
 class Login extends Component {
 
@@ -37,9 +39,12 @@ class Login extends Component {
     render() {
         return <div className = 'login-container'>
             <input value = {this.state.email} placeholder= "Email" name = 'email' onChange = {this.onChange}  />
-            <input value = {this.state.password} type="password" placeholder= "password" name = 'password' onChange = {this.onChange}  />
-            <button onClick = {() => this.login()}>Login</button>
-            <div className = 'on-hover' onClick = {() => {linkTo('register', this.props)}}>Register</div>
+            <input value = {this.state.password} type="password" placeholder= "Password" name = 'password' onChange = {this.onChange}  />
+            <img src ={loginButton} onClick = {() => this.login()} />
+            
+            <div id = 'sign-up-container'>
+                <p>New to the hackathon?</p> <p onClick = {() => {linkTo('register', this.props)}} id = 'sign-up'>{' Sign up'}</p>
+            </div>
         </div>
     }
 }

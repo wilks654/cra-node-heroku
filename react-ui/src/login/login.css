@@ -1,7 +1,114 @@
 .login-container {
-    margin-top: 20%;
+    position: relative;
     display: grid;
+    /*
     justify-content: center;
     text-align: center;
+    */
     grid-gap : 1em;
+
 }
+
+.login-container h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+.login-container input {
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom-style: solid;
+    border-color: white;
+    color: white;
+    padding: .25em;
+    font-size: 1.5em;
+    background-color: none;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.login-container input:focus {
+    -webkit-appearance: none;
+}
+
+.login-container img, .register-container img {
+    height: 3em;
+    width: 16em;
+} 
+
+.login-container img:hover, .register-container img:hover {
+    cursor: pointer;
+}
+
+
+#sign-up-container {
+    display: flex;
+    justify-content: center;
+}
+
+#sign-up-container p {
+    margin : .25em;
+    font-size: 1.5em;
+}
+
+#sign-up {
+    color: var(--primary);
+}
+
+#sign-up:hover {
+    cursor: pointer;
+}
+/*
+.inputs-format {
+    display: flex;
+    width: 100%;
+}
+
+.inputs-format div {
+        
+    width: 100%;
+
+}
+
+.inputs-format div div {
+
+    text-align: center;
+    margin-top: 4em;
+
+}
+*/
+
+.grid-template {
+    display: grid;
+    grid-template-areas:". ."
+                        ". .";
+    grid-gap: 4em;
+    width: 60%;        
+    margin-left: auto;
+    margin-right: auto;                
+}
+
+
+.grid-template input:nth-child(even){
+    margin-left : auto;
+}
+
+.add-image {
+    border-style: solid;
+    border-color: var(--primary);
+    height: 8em;
+    width: 15em;
+    background-color: var(--secondary);
+    border-radius: var(--border-radius);
+}
+
+
+.grid-template input {
+    width: 80%;
+}
+

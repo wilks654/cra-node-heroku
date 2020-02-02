@@ -60,13 +60,14 @@ router.post('/register', (req, res) => {
                         })
                     })
             })
-        } )
+        })
 
 
 //Post user/authenticate
 //@access public
 //@desc authenticate user        
 router.post('/authenticate', (req, res) => {
+
     const { email, password } = req.body
 
     if (!email || !password) {
