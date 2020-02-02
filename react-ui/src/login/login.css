@@ -1,0 +1,7 @@
+.login-container {
+    margin-top: 20%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-gap : 1em;
+}

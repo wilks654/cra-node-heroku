@@ -1,0 +1,12 @@
+#images-container {
+    margin-top : 5em;
+    display: grid;
+    grid-gap: 2em;
+    justify-content: center;
+}
+
+#images-container #canvas {
+    background-color: white;
+    border-style: solid;
+    border-color: var(--primary);
+}

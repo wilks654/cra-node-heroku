@@ -1,0 +1,15 @@
+#tasks-container {
+    display: grid;
+    grid-gap : 1em;
+    justify-content: center;
+    margin: 5em;
+}
+
+#tasks-container div {
+    text-align: center;
+}
+
+#tasks-container div:hover {
+    cursor: pointer;
+}
+

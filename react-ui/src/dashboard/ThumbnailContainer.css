@@ -1,0 +1,89 @@
+#thumbnail-container {
+    position: relative;
+    width : 20em;
+    height : 15em;
+    background-color : white;
+    border-color: var(--primary);
+    border-style: solid;
+    border-width: 2px;
+
+    color: black;
+
+    display: grid;
+    grid-template: 'top' 20%
+                   'bottom' 80%;
+
+    border-radius:  var(--border-radius);
+    overflow: hidden;
+    margin : 1em;
+}
+
+#thumbnail-container #thumbnail-container-header {
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 1.25em;
+    padding: none;
+    margin-top : -.75em;
+}
+
+#thumbnail-container #thumbnail-container-body {
+
+    background-color: var(--secondary);
+    position: relative;
+    
+}
+
+img {
+    background-image: url('../assets/Clouds_icon.png');
+    width: 15em;
+    height: 15em;
+    background-position: 'center';
+    background-size: 'cover';
+    background-repeat: 'no-repeat';
+}
+
+.cloud {
+    position: absolute;
+    top : 7.5px;
+    left : 7.5px;
+    background-image: url('../assets/Clouds_icon.png');
+    
+
+    width: 9em;
+    height: 6.5em;
+}
+
+#temperature {
+    position: absolute;
+    top : 5px;
+    right: 2.5px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#weather-location {
+    position: absolute;
+    bottom : .5em;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+.listed {
+    display: grid;
+    grid-gap: 1em;
+
+    margin-top: 5%;
+}
+
+.listed h3 {
+    padding : 0px;
+    margin: 0px;
+}
+
+.listed > * {
+    width: 90%;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    text-align: center;
+}
