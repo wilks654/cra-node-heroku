@@ -1,17 +1,27 @@
 .login-container {
+    margin-top: 2em;
     position: relative;
     display: grid;
     /*
     justify-content: center;
     text-align: center;
     */
-    grid-gap : 1em;
+    grid-gap : 2em;
 
 }
+
+.login-container > * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 .login-container h1 {
     font-size: 4em;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .login-container input {
@@ -48,7 +58,7 @@
 
 #sign-up-container {
     display: flex;
-    justify-content: center;
+
 }
 
 #sign-up-container p {
@@ -63,11 +73,12 @@
 #sign-up:hover {
     cursor: pointer;
 }
-/*
+
 .inputs-format {
-    display: flex;
     width: 100%;
 }
+
+/*
 
 .inputs-format div {
         
@@ -98,13 +109,23 @@
     margin-left : auto;
 }
 
+/*GLOBAL*/
 .add-image {
     border-style: solid;
     border-color: var(--primary);
-    height: 8em;
-    width: 15em;
+    height: 10em;
+    width: 17.5em;
     background-color: var(--secondary);
     border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.add-image div {
+    font-size: 1.5rem;
 }
 
 

@@ -38,6 +38,7 @@ class Login extends Component {
 
     render() {
         return <div className = 'login-container'>
+            <h1>Hackathon </h1>
             <input value = {this.state.email} placeholder= "Email" name = 'email' onChange = {this.onChange}  />
             <input value = {this.state.password} type="password" placeholder= "Password" name = 'password' onChange = {this.onChange}  />
             <img src ={loginButton} onClick = {() => this.login()} />

@@ -55,7 +55,7 @@ class Register extends Component {
             </div>
 
             <div className = 'add-image'>
-
+                <div>Add picture</div>
             </div>
 
             <img src ={registerButton} onClick = {() => this.register()} />
