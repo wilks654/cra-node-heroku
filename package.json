@@ -19,7 +19,7 @@
     "config": "^3.2.5",
     "express": "^4.16.4",
     "mongoose": "^5.8.11",
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "jsonwebtoken": "^8.5.1"
   },
   "repository": {
