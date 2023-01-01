@@ -16,7 +16,7 @@
     "react-ui/node_modules"
   ],
   "dependencies": {
-    "config": "^3.2.5",
+    "config": "^3.3.8",
     "express": "^4.16.4",
     "mongoose": "^5.8.11",
     "bcrypt": "^3.0.7",
